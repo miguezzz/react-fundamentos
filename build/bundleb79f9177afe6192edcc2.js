@@ -96,7 +96,7 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
   \*****************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("\n\nvar _react = _interopRequireDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nvar _client = _interopRequireDefault(__webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\"));\nfunction _interopRequireDefault(e) { return e && e.__esModule ? e : { \"default\": e }; }\nvar root = _client[\"default\"].createRoot(document.getElementById('root'));\nroot.render(/*#__PURE__*/_react[\"default\"].createElement(\"h1\", {\n  id: \"title\"\n}, /*#__PURE__*/_react[\"default\"].createElement(\"span\", null, \"Hello World!!!\")) // html dentro do JS já é JSX (React sendo usado)\n);\n\n//# sourceURL=webpack://react-fundamentos/./transpiled/index.js?");
+eval("\n\nvar _react = _interopRequireDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nvar _client = _interopRequireDefault(__webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\"));\nfunction _interopRequireDefault(e) { return e && e.__esModule ? e : { \"default\": e }; }\nvar root = _client[\"default\"].createRoot(document.getElementById('root')); // cria a raiz do React a partir do id root\nroot.render(\n/*#__PURE__*/\n// renderiza o conteúdo na raiz\n_react[\"default\"].createElement(\"h1\", {\n  id: \"title\"\n}, /*#__PURE__*/_react[\"default\"].createElement(\"span\", null, \"Hello World!!!\")) // html dentro do JS já é JSX (React sendo usado)\n);\n\n//# sourceURL=webpack://react-fundamentos/./transpiled/index.js?");
 
 /***/ })
 
