@@ -2,12 +2,11 @@ import React from 'react';
 
 function App() {
   return (
-    <div>
+    <>
       <h1>Componente App importado!</h1>
-      <h2>Irmão de H1</h2>
-    </div> // componentes irmãos devem estar dentro de um componente pai
-  );
-  // por baixo dos panos: React.createElement('h1', null, 'Componente App importado!')
+      <h2>Irmão de h1</h2>
+    </> // short-syntax para React.Fragment. Componente que não renderiza nada, mas serve para agrupar elementos
+  ); // por baixo dos panos: React.createElement('h1', null, 'Componente App importado!')
 }
 
 export default App;
