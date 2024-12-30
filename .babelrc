@@ -1,3 +1,4 @@
+// This file is used to configure Babel. Babel is a tool that converts your ES6+ code into ES5 friendly code. This is useful because not all browsers support ES6 features.
 {
   "presets": [
     "@babel/preset-env",
