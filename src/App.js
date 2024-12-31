@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Header>
-        <h2>Notícias da semana</h2> {/* children */}
+        <h2>Notícias da semana!</h2> {/* children */}
       </Header>
 
       <Post

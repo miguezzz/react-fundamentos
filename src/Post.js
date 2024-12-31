@@ -4,8 +4,8 @@ export default function Post(props) {
   return (
     <>
       <article>
-        <h2>{props.post.title}</h2>
-        <h3>{props.post.subtitle}</h3>
+        <h3>{props.post.title}</h3>
+        <h4>{props.post.subtitle}</h4>
         <span>{props.likes}</span>
       </article>
       <br />
