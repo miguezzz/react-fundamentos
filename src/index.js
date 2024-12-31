@@ -7,7 +7,7 @@ import App from './App'; // importa o componente App (o webpack vai transpilar o
 // 1. Função
 // 2. Classe
 
-const root = ReactDOM.createRoot(document.getElementById('root')); // cria a raiz do React a partir do id root
+const root = ReactDOM.createRoot(document.getElementById('root')); // cria a raiz do React a partir do id root lá no index.html da pasta public
 
 // renderiza o conteúdo na raiz
 root.render(<App />);
