@@ -10,24 +10,28 @@ function App() {
       title: 'Title#01',
       subtitle: 'Subtitle#01',
       likes: 10,
+      read: false,
     },
     {
       id: Math.random(),
       title: 'Title#02',
       subtitle: 'Subtitle#02',
       likes: 20,
+      read: true,
     },
     {
       id: Math.random(),
       title: 'Title#03',
       subtitle: 'Subtitle#03',
       likes: 30,
+      read: false,
     },
     {
       id: Math.random(),
       title: 'Title#04',
       subtitle: 'Subtitle#02',
       likes: 40,
+      read: true,
     },
   ]); // [state, setState]: estado atual e função para atualizar o estado
 
@@ -68,14 +72,8 @@ function App() {
       {posts.map((post) => (
         <Post // para cada post, renderiza um componente Post
           key={post.id} // key é obrigatório para listas, para o React identificar cada elemento
-          // abaixo, a primeira chave é para identificar código JavaScript, a segunda é para identificar um objeto
-          post={{
-            id: post.id,
-            title: post.title,
-            subtitle: post.subtitle,
-          }}
-          likes={post.likes}
-          onRemove={handleRemovePost} // função de callback via props para remover o post
+          onRemove={handleRemovePost} // função de callback via props para remover o post7
+          post={post} // propriedade post com os dados do post
         />
       ))}
     </> // short-syntax para React.Fragment. Componente que não renderiza nada, mas serve para agrupar elementos
