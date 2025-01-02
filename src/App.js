@@ -7,15 +7,15 @@ function App() {
   const [posts, setPosts] = useState([
     {
       id: Math.random(),
-      title: 'Title#02',
-      subtitle: 'Subtitle#02',
-      likes: 20,
-    },
-    {
-      id: Math.random(),
       title: 'Title#01',
       subtitle: 'Subtitle#01',
       likes: 10,
+    },
+    {
+      id: Math.random(),
+      title: 'Title#02',
+      subtitle: 'Subtitle#02',
+      likes: 20,
     },
     {
       id: Math.random(),
@@ -36,7 +36,6 @@ function App() {
   // função que irá executar a atualização de estado com o hook useState para o React re-renderizar a interface
   // basicamente executa a função App novamente, mas com o estado atualizado
   function handleRefresh() {
-    // quando o estado novo depende do estado anterior, é preciso passar uma função prevState para o setState, que apenas acessa o estado anterior quando a função é executada de fato. prevState é responsável por garantir que o estado atual é realmente o estado mais atualizado (evita problemas de inconsistência de interface). Se usássemos o estado diretamente, estaríamos acessando um estado antigo, que poderia estar desatualizado (que era o estado no momento em que clicamos).
     setPosts((prevState) => [
       ...prevState, // spread operator para copiar o array posts atual
       {
@@ -58,7 +57,8 @@ function App() {
   return (
     <>
       <Header>
-        <h2>Notícias da semana!</h2> {/* children */}
+        {/* children */}
+        <h2>Notícias da semana!</h2>
         <button type="button" onClick={handleRefresh}>
           Atualizar
         </button>
@@ -68,6 +68,7 @@ function App() {
       {posts.map((post) => (
         <Post // para cada post, renderiza um componente Post
           key={post.id} // key é obrigatório para listas, para o React identificar cada elemento
+          // abaixo, a primeira chave é para identificar código JavaScript, a segunda é para identificar um objeto
           post={{
             id: post.id,
             title: post.title,
@@ -78,7 +79,7 @@ function App() {
         />
       ))}
     </> // short-syntax para React.Fragment. Componente que não renderiza nada, mas serve para agrupar elementos
-  ); // por baixo dos panos: React.createElement('h1', null, 'Componente App importado!')
+  ); // por baixo dos panos: React.createElement()
 }
 
 export default App;
