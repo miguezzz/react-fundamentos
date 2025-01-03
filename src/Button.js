@@ -4,6 +4,7 @@ import { ThemeContext } from './App';
 
 export default function Button(props) {
   const theme = React.useContext(ThemeContext);
+  console.log({ theme });
 
   return (
     <button

@@ -66,7 +66,7 @@ function App() {
 
   return (
     <ThemeContext.Provider value={theme}>
-      <Header>
+      <Header onToggleTheme={handleToggleTheme}>
         {/* children */}
         <h2>Notícias da semana!</h2>
         <button type="button" onClick={handleRefresh}>
