@@ -13,7 +13,7 @@ export default function PostHeader(props) {
         <strong>{props.post.title}</strong>
       )}
       <Button
-        onRemove={props.onRemove}
+        onClick={() => props.onRemove(props.post.id)}
         post={{
           id: props.post.id,
         }}
