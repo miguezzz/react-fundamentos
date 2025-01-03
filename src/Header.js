@@ -1,14 +1,16 @@
-import React from 'react';
-
+import React, { useContext } from 'react';
 import Button from './Button';
 
+import { ThemeContext } from './ThemeContext';
+
 export default function Header(props) {
+  const { onToggleTheme } = useContext(ThemeContext);
+
   return (
     <header>
       <h1>Vmigu's journal</h1>
-      <Button onClick={props.onToggleTheme}>Mudar Tema</Button>
+      <Button onClick={onToggleTheme}>Mudar Tema</Button>
       {props.children}
-      {/*children é uma propriedade especial do React que renderiza o conteúdo que está dentro do componente*/}
       <hr />
     </header>
   );
