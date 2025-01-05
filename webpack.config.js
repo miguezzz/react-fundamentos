@@ -28,6 +28,10 @@ module.exports = {
         exclude: /node_modules/, // arquivos node_modules já são transpilados antes de serem publicados
         use: 'babel-loader', // usar o babel-loader para transpilar os terminados em .js para uma versão compatível com naveadores
       },
+      {
+        test: /\.css$/, // testa se o arquivo termina com .css
+        use: ['style-loader', 'css-loader'], // usar o style-loader para injetar o css no html e o css-loader para cuidar das importações de css (ordem importa)
+      },
     ],
   },
   devServer: {
