@@ -29,7 +29,7 @@ module.exports = {
         use: 'babel-loader', // usar o babel-loader para transpilar os terminados em .js para uma versão compatível com naveadores
       },
       {
-        test: /\.css$/, // testa se o arquivo termina com .css
+        test: /\.module\.css$/,
         use: [
           'style-loader',
           {
@@ -39,6 +39,14 @@ module.exports = {
             },
           },
         ], // usar o style-loader para injetar o css no html e o css-loader para cuidar das importações de css (ordem importa)
+      },
+      {
+        test: /\.css$/, // Arquivos .css
+        exclude: /\.module\.css$/,
+        use: [
+          'style-loader',
+          'css-loader', // CSS global (sem modules)
+        ],
       },
     ],
   },

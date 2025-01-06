@@ -6,6 +6,8 @@ import Button from './Button';
 
 import { ThemeProvider } from './ThemeContext';
 
+import * as styles from './App.module.css';
+
 function App() {
   const [posts, setPosts] = useState([
     {
@@ -62,7 +64,7 @@ function App() {
   return (
     <ThemeProvider>
       <Header>
-        <h2>Notícias da semana!</h2>
+        <h2 className={styles.title}>Notícias da semana!</h2>
         <Button onClick={handleRefresh}>Atualizar</Button>
       </Header>
 
