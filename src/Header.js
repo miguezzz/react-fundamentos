@@ -3,7 +3,7 @@ import Button from './Button';
 
 import { ThemeContext } from './ThemeContext';
 
-import * as styles from './Header.module.css';
+import * as styles from './Header.module.scss';
 
 export default function Header(props) {
   const { onToggleTheme } = useContext(ThemeContext);

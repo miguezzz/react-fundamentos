@@ -6,7 +6,7 @@ import Button from './Button';
 
 import { ThemeProvider } from './ThemeContext';
 
-import * as styles from './App.module.css';
+import * as styles from './App.module.scss';
 
 function App() {
   const [posts, setPosts] = useState([
