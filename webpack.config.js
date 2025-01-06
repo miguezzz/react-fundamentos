@@ -30,7 +30,15 @@ module.exports = {
       },
       {
         test: /\.css$/, // testa se o arquivo termina com .css
-        use: ['style-loader', 'css-loader'], // usar o style-loader para injetar o css no html e o css-loader para cuidar das importações de css (ordem importa)
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true, // habilita o CSS Modules
+            },
+          },
+        ], // usar o style-loader para injetar o css no html e o css-loader para cuidar das importações de css (ordem importa)
       },
     ],
   },
