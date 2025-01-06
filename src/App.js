@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import Post from './Post';
 import Header from './Header';
+import Button from './Button';
 
 import { ThemeProvider } from './ThemeContext';
 
@@ -62,9 +63,7 @@ function App() {
     <ThemeProvider>
       <Header>
         <h2>Notícias da semana!</h2>
-        <button type="button" onClick={handleRefresh}>
-          Atualizar
-        </button>
+        <Button onClick={handleRefresh}>Atualizar</Button>
       </Header>
 
       {/* renderizando lista */}
