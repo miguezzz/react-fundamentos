@@ -2,9 +2,13 @@ import React from 'react';
 
 import PostHeader from './PostHeader';
 
+import * as styles from './Post.module.scss';
+
 export default function Post(props) {
   return (
-    <>
+    <article
+      className={props.post.removed ? styles.classRemoved : styles.class}
+    >
       <PostHeader
         onRemove={props.onRemove}
         post={{
@@ -13,11 +17,9 @@ export default function Post(props) {
           read: props.post.read,
         }}
       />
-      <article>
-        <h4>{props.post.subtitle}</h4>
-        <span>Likes: {props.post.likes}</span>
-      </article>
-      <br />
-    </>
+
+      <h4>{props.post.subtitle}</h4>
+      <span>Likes: {props.post.likes}</span>
+    </article>
   );
 }

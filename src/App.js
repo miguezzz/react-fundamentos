@@ -16,6 +16,7 @@ function App() {
       subtitle: 'Subtitle#01',
       likes: 10,
       read: false,
+      removed: true,
     },
     {
       id: Math.random(),
@@ -23,6 +24,7 @@ function App() {
       subtitle: 'Subtitle#02',
       likes: 20,
       read: true,
+      removed: false,
     },
     {
       id: Math.random(),
@@ -30,6 +32,7 @@ function App() {
       subtitle: 'Subtitle#03',
       likes: 30,
       read: false,
+      removed: false,
     },
     {
       id: Math.random(),
@@ -37,6 +40,7 @@ function App() {
       subtitle: 'Subtitle#02',
       likes: 40,
       read: true,
+      removed: false,
     },
   ]); // [state, setState]: estado atual e função para atualizar o estado
 
@@ -58,7 +62,11 @@ function App() {
 
   function handleRemovePost(postId) {
     console.log({ postId });
-    setPosts((prevState) => prevState.filter((post) => post.id !== postId)); // filtra os posts que não têm o id do post que queremos remover
+    setPosts((prevState) =>
+      prevState.map((post) =>
+        post.id === postId ? { ...post, removed: true } : post,
+      ),
+    );
   }
 
   return (
