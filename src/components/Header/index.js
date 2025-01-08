@@ -1,16 +1,20 @@
 import React, { useContext } from 'react';
+import styled from 'styled-components';
+
 import Button from '../Button';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
 
-import * as styles from './Header.module.scss';
+const Title = styled.h1`
+  color:rgb(0, 107, 194);
+`;
 
 export default function Header(props) {
   const { onToggleTheme } = useContext(ThemeContext);
 
   return (
     <header>
-      <h1 className={styles.title}>Vmigu's journal</h1>
+      <Title>Vmigu's journal</Title>
       <Button onClick={onToggleTheme}>Mudar Tema</Button>
       {props.children}
       <hr />
