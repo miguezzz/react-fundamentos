@@ -4,6 +4,8 @@ import PostHeader from './PostHeader';
 
 import * as styles from './Post.module.scss';
 
+import { Subtitle, Likes } from './styles';
+
 export default function Post(props) {
   return (
     <article
@@ -18,8 +20,8 @@ export default function Post(props) {
         }}
       />
 
-      <h4>{props.post.subtitle}</h4>
-      <span>Likes: {props.post.likes}</span>
+      <Subtitle>{props.post.subtitle}</Subtitle>
+      <Likes>Likes: {props.post.likes}</Likes>
     </article>
   );
 }
