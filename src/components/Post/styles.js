@@ -2,8 +2,8 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   margin-bottom: 24px;
-  opacity: ${(props) => (props.removed ? 0.5 : 1)};
-  color: ${(props) => (props.removed ? '#f00' : '#fff')};
+  /* opacity: ${(props) => (props.removed ? 0.5 : 1)};
+  color: ${(props) => (props.removed ? '#f00' : '#fff')}; */
 
   ${(props) => css`
     opacity: ${props.removed ? 0.5 : 1};
