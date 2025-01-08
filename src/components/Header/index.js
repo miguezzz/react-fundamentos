@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import Button from './Button';
+import Button from '../Button';
 
-import { ThemeContext } from './ThemeContext';
+import { ThemeContext } from '../../contexts/ThemeContext';
 
 import * as styles from './Header.module.scss';
 

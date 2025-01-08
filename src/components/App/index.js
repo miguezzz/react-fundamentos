@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
-import Post from './Post';
-import Header from './Header';
-import Button from './Button';
+import Post from '../Post';
+import Header from '../Header';
+import Button from '../Button';
 
-import { ThemeProvider } from './ThemeContext';
+import { ThemeProvider } from '../../contexts/ThemeContext';
 
 import * as styles from './App.module.scss';
 
