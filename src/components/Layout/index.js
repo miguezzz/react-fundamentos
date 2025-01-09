@@ -9,10 +9,12 @@ export default function Layout(props) {
     <>
       <Header
         onToggleTheme={props.onToggleTheme}
+        selectedTheme={props.selectedTheme}
       />
       <PostsList />
       <Footer
         onToggleTheme={props.onToggleTheme}
+        selectedTheme={props.selectedTheme}
       />
     </>
   );
