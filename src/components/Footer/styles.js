@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.footer`
-  background: #111;
+  background: ${({ theme }) => theme.footerBgColor};
   height: 70px;
   display: flex;
   align-items: center;
