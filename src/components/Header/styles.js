@@ -6,7 +6,7 @@ export const Container = styled.header`
   display: flex;
   align-items: center;
   padding: 0 24px;
-  border-radius: 10px;
+  border-radius: ${({ theme }) => theme.borderRadius};
   justify-content: space-between;
 
   button {
