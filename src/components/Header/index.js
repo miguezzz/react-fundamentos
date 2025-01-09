@@ -5,7 +5,7 @@ import { Container } from './styles';
 
 import { MyThemeContext } from '../../contexts/MyThemeContext';
 
-export default function Header(props) {
+export default function Header() {
   const { theme, onToggleTheme } = useContext(MyThemeContext);
 
   const usetheme = useTheme(); // hook useTheme para acessar o tema atual

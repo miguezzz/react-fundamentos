@@ -7,7 +7,7 @@ import GlobalStyles from './styles/global';
 import Layout from './components/Layout';
 
 export default function App() {
-  const { currentTheme } = useContext(MyThemeContext);
+  const { currentTheme } = useContext(MyThemeContext); // acessa o tema atual
   return (
     // esse é o ThemeProvider do MyThemeContext
     <MyThemeProvider theme={currentTheme}>

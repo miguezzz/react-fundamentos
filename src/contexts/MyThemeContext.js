@@ -19,8 +19,8 @@ export function MyThemeProvider(props) {
   return (
     <MyThemeContext.Provider
       value={{
-        theme,
-        currentTheme,
+        theme, // string 'dark' ou 'light'
+        currentTheme, // objeto com as definições do tema atual
         onToggleTheme: handleToggleTheme,
       }}
     >

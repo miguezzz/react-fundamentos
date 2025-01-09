@@ -4,7 +4,7 @@ import { Container } from './styles';
 
 import { MyThemeContext } from '../../contexts/MyThemeContext';
 
-export default function Footer(props) {
+export default function Footer() {
   const { theme, onToggleTheme } = useContext(MyThemeContext);
 
   return (
