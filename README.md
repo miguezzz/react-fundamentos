@@ -1,4 +1,6 @@
-# react-fundamentos
+# Fundamentos do React
+
+Este repositório foi criado para o estudo dos fundamentos da biblioteca ReactJS a partir do curso JStack. Segue abaixo algumas informações a respeito do React, além de instruções para rodar o código construído durante os estudos. Com o passar das aulas, vários conceitos foram adicionados e vários foram removidos. Para maiores detalhes, verifique os commits.
 
 ## O que é React?
 
@@ -19,3 +21,17 @@ O React possui algumas dependências que são necessárias para o seu funcioname
 ## Como começar a usar o React?
 
 Para começar a usar o React, você precisa instalar o Node.js e o npm (Node Package Manager) em seu computador. Em seguida, você pode criar um novo projeto React usando o Create React App, que é uma ferramenta oficial do React para a criação de projetos. Depois de criar o seu projeto, você pode começar a escrever código React e construir a sua aplicação.
+
+## Como rodar o código? (dev server)
+
+1. Instale as dependências
+```bash
+yarn install (ou npm install)
+```
+
+2. Inicie o servidor
+```bash
+yarn dev (ou npm run dev)
+```
+
+3. Acesse localhost:3000
