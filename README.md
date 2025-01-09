@@ -1,6 +1,6 @@
 # Fundamentos do React
 
-Este repositório foi criado para o estudo dos fundamentos da biblioteca ReactJS a partir do curso JStack. Segue abaixo algumas informações a respeito do React, além de instruções para rodar o código durante os estudos. Com o passar das aulas, vários conceitos foram adicionados e vários foram removidos. Para maiores detalhes, verifique os commits.
+Este repositório foi criado para o estudo dos fundamentos da biblioteca ReactJS a partir do curso JStack. Segue abaixo algumas informações a respeito do React, além de instruções para rodar o código construído durante os estudos. Com o passar das aulas, vários conceitos foram adicionados e vários foram removidos. Para maiores detalhes, verifique os commits.
 
 ## O que é React?
 
