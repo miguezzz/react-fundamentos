@@ -1,4 +1,4 @@
-import React, { useState, createContext, useMemo } from 'react';
+import React, { createContext, useState, useMemo, useEffect } from 'react';
 
 import themes from '../styles/themes';
 
@@ -15,6 +15,10 @@ export function MyThemeProvider(props) {
     console.log('handleToggleTheme called!');
     setTheme((prevState) => (prevState === 'dark' ? 'light' : 'dark')); // lembrete: deve-se sempre usar a função de atualização do estado para garantir que o React atualize a interface. prevState "sabe" o valor atual do estado
   }
+
+  useEffect(() => {
+    localStorage.setItem('theme', JSON.stringify(theme)); // salva o tema no localStorage
+  }, [theme]); // useEffect para salvar o tema no localStorage toda vez que ele for alterado
 
   return (
     <MyThemeContext.Provider
