@@ -46,5 +46,6 @@ module.exports = {
   devServer: {
     // configuração do servidor de desenvolvimento
     port: 3000,
+    historyApiFallback: true, // permite que o react-router manipule as rotas
   },
 };
