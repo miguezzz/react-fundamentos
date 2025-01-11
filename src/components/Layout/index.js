@@ -1,15 +1,16 @@
-  import React from 'react';
+import React from 'react';
 
 import Header from '../Header';
-import PostsList from '../PostsList';
 import Footer from '../Footer';
+
+import Routes from '../../Routes';
 
 export default function Layout(props) {
   return (
     <>
-      <Header/>
-      <PostsList />
-      <Footer/>
+      <Header />
+      <Routes />
+      <Footer />
     </>
   );
 }
