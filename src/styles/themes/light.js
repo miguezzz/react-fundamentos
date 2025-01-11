@@ -7,4 +7,5 @@ export default {
   headerBgColor: '#aaa',
   footerBgColor: '#aaa',
   postBgColor: '#ddd',
+  navBgColor: '#aaa',
 };

@@ -6,14 +6,16 @@ import Footer from '../Footer';
 
 import Routes from '../../Routes';
 
+import { Nav } from './styles';
+
 export default function Layout(props) {
   return (
     <BrowserRouter>
       <Header />
-      <nav>
+      <Nav>
         <Link to="/">Home</Link>
         <Link to="/posts">Posts</Link>
-      </nav>
+      </Nav>
       <Routes />
       <Footer />
     </BrowserRouter>
