@@ -7,6 +7,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: path.resolve(__dirname, 'src', 'index.js'), // arquivo de entrada (arquivo onde está o ReactDOM.createRoot)
+  mode: 'development',
   output: {
     path: path.resolve(__dirname, 'build'), // vai pra pasta build
     filename: 'bundle[hash].js', // nome do arquivo de saída
