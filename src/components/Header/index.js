@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-// import { useTheme } from 'styled-components';
+import { useTheme } from 'styled-components';
 
 import { Container } from './styles';
 
