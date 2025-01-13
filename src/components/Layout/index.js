@@ -8,7 +8,7 @@ import Routes from '../../Routes';
 
 import { Nav } from './styles';
 
-export default function Layout(props) {
+export default function Layout() {
   return (
     <BrowserRouter>
       <Header />
