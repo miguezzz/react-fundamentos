@@ -11,6 +11,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'build'), // vai pra pasta build
     filename: 'bundle[hash].js', // nome do arquivo de saída
+    publicPath: '/', // caminho relativo para o arquivo de saída
   },
   plugins: [
     // plugin serve para adicionar funcionalidades ao webpack
